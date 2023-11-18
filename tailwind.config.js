@@ -60,6 +60,13 @@ module.exports = {
         'portrait-tall': '5/8',
         'portrait': '4/5',
       },
+
+      colors: {
+        sage: {
+          'dark': '#5D684B',
+          'light': '#E3E9DD',
+        },
+      },
     },
   },
   plugins: [
