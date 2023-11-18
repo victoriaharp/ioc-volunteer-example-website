@@ -458,15 +458,6 @@ video {
 .max-h-screen {
   max-height: 100vh;
 }
-.max-h-75p {
-  max-height: 75%;
-}
-.max-h-\[75vh\] {
-  max-height: 75vh;
-}
-.max-h-\[75p\] {
-  max-height: 75p;
-}
 .w-full {
   width: 100%;
 }
@@ -494,9 +485,6 @@ video {
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -517,9 +505,6 @@ video {
 }
 .gap-8 {
   gap: 2rem;
-}
-.gap-10 {
-  gap: 2.5rem;
 }
 .gap-3 {
   gap: 0.75rem;
@@ -608,9 +593,6 @@ video {
 .pl-0 {
   padding-left: 0px;
 }
-.pl-5p {
-  padding-left: 5%;
-}
 .pb-5p {
   padding-bottom: 5%;
 }
@@ -623,9 +605,6 @@ video {
 .text-right {
   text-align: right;
 }
-.text-justify {
-  text-align: justify;
-}
 .font-sans {
   font-family: Roboto, sans-serif;
 }
@@ -637,13 +616,9 @@ video {
   font-size: 3rem;
   line-height: 1;
 }
-.text-lg {
-  font-size: 1.125rem;;
-  line-height: 1.2;
-}
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 1.2;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 1;
 }
 .text-3xl {
   font-size: 1.875rem;
@@ -652,25 +627,14 @@ video {
 .text-\[5vw\] {
   font-size: 5vw;
 }
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.2;
-}
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 1;
-}
 .font-black {
   font-weight: 900;
 }
-.font-\[800\] {
-  font-weight: 800;
+.font-\[900\] {
+  font-weight: 900;
 }
 .font-\[400\] {
   font-weight: 400;
-}
-.font-\[900\] {
-  font-weight: 900;
 }
 .uppercase {
   text-transform: uppercase;
@@ -769,27 +733,23 @@ img{
 }
 
 @media (min-width: 768px) {
-  .md\:mb-0 {
-    margin-bottom: 0px;
-  }
   .md\:ml-auto {
     margin-left: auto;
+  }
+  .md\:mb-0 {
+    margin-bottom: 0px;
   }
   .md\:flex {
     display: flex;
   }
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .md\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .md\:grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-  .md\:py-5p {
-    padding-top: 5%;
-    padding-bottom: 5%;
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .md\:pl-\[15\%\] {
     padding-left: 15%;
