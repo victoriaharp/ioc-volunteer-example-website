@@ -33,7 +33,7 @@ html {
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: Roboto, sans-serif; /* 4 */
+  font-family: Roboto Condensed, sans-serif; /* 4 */
   font-feature-settings: normal; /* 5 */
 }
 /*
@@ -434,9 +434,6 @@ video {
 .mt-3 {
   margin-top: 0.75rem;
 }
-.ml-auto {
-  margin-left: auto;
-}
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -451,6 +448,9 @@ video {
 }
 .grid {
   display: grid;
+}
+.aspect-square {
+  aspect-ratio: 1 / 1;
 }
 .h-full {
   height: 100%;
@@ -532,9 +532,32 @@ video {
 .border-t-2 {
   border-top-width: 2px;
 }
+.border-\[\#7b9168\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(123 145 104 / var(--tw-border-opacity));
+}
+.border-\[\#e3e9dd\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(227 233 221 / var(--tw-border-opacity));
+}
+.border-\[\#849972\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(132 153 114 / var(--tw-border-opacity));
+}
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+.bg-\[\#e3e9dd\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(227 233 221 / var(--tw-bg-opacity));
+}
+.bg-\[\#7b9168\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(123 145 104 / var(--tw-bg-opacity));
+}
+.bg-inherit {
+  background-color: inherit;
 }
 .bg-black {
   --tw-bg-opacity: 1;
@@ -581,6 +604,9 @@ video {
 .pb-3 {
   padding-bottom: 0.75rem;
 }
+.pt-5 {
+  padding-top: 1.25rem;
+}
 .pr-0 {
   padding-right: 0px;
 }
@@ -592,6 +618,9 @@ video {
 }
 .pl-0 {
   padding-left: 0px;
+}
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 .pb-5p {
   padding-bottom: 5%;
@@ -606,7 +635,7 @@ video {
   text-align: right;
 }
 .font-sans {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto Condensed, sans-serif;
 }
 .text-sm {
   font-size: 0.875rem;;
@@ -639,12 +668,13 @@ video {
 .uppercase {
   text-transform: uppercase;
 }
-.tracking-widest {
-  letter-spacing: 0.1em;
-}
-.text-black {
+.text-\[\#7b9168\] {
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: rgb(123 145 104 / var(--tw-text-opacity));
+}
+.text-\[\#e3e9dd\] {
+  --tw-text-opacity: 1;
+  color: rgb(227 233 221 / var(--tw-text-opacity));
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -697,14 +727,29 @@ img{
   max-width: 100%;
 }
 
+.hover\:border-\[\#7b9168\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(123 145 104 / var(--tw-border-opacity));
+}
+
 .hover\:border-black:hover {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.hover\:bg-\[\#e3e9dd\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(227 233 221 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:text-\[\#7b9168\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(123 145 104 / var(--tw-text-opacity));
 }
 
 .hover\:text-black:hover {
@@ -736,11 +781,17 @@ img{
   .md\:ml-auto {
     margin-left: auto;
   }
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
   .md\:mb-0 {
     margin-bottom: 0px;
   }
   .md\:flex {
     display: flex;
+  }
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .md\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -748,8 +799,11 @@ img{
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+  .md\:pt-0 {
+    padding-top: 0px;
   }
   .md\:pl-\[15\%\] {
     padding-left: 15%;
@@ -760,16 +814,13 @@ img{
   .md\:text-left {
     text-align: left;
   }
+  .md\:text-right {
+    text-align: right;
+  }
   .md\:rotate-text-180{
     writing-mode: vertical-lr;
     text-orientation: mixed;
     --tw-rotate: 180deg;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:basis-\[20\%\] {
-    flex-basis: 20%;
   }
 }
